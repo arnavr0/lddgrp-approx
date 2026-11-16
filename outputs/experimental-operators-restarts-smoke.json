@@ -1,0 +1,118 @@
+{
+  "method": "stage-aware ALNS with exact small-stage decoding and bounded enumerative local repair",
+  "instance_count": 1,
+  "seconds_per_instance": 0.5,
+  "iterations_per_instance": 50,
+  "base_seed": 7,
+  "restarts": 2,
+  "exact_stage_limit": 10,
+  "large_stage_local_search_passes": 12,
+  "skeleton_repair_max_edges": 7,
+  "skeleton_repair_seconds": 0.08,
+  "enable_skeleton_repair": false,
+  "enable_delivery_order_dp": false,
+  "load_aware_ruin_max_edges": 6,
+  "load_aware_ruin_seconds": 0.06,
+  "load_aware_final_seconds": 0.08,
+  "load_aware_final_passes": 1,
+  "enable_load_aware_ruin": true,
+  "route_block_max_edges": 4,
+  "route_block_seconds": 0.04,
+  "enable_route_block_relocate": true,
+  "sequence_split_seconds": 0.1,
+  "sequence_split_max_moves": 12,
+  "sequence_split_final_seconds": 0.12,
+  "enable_sequence_split_vnd": true,
+  "records": [
+    {
+      "instance": "LDdGRP4_4_2_1.dat",
+      "curb_weight": 15.0,
+      "landing_takeoff_cost": 125.0,
+      "published_lower_bound": 100.0,
+      "published_upper_bound": 120.0,
+      "published_optimal": false,
+      "heuristic_objective": 4109.0,
+      "gap_to_published_upper_bound_percent": 3324.1666666666665,
+      "elapsed_seconds": 0.003994799917563796,
+      "restart_count": 2,
+      "restart_objectives": [
+        4109.0,
+        4109.0
+      ],
+      "node_labels_by_internal_index": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "4": 75.0
+      },
+      "certificate": {
+        "objective": 4109.0,
+        "delivery_order": [
+          3
+        ],
+        "edge_stages_zero_based": [
+          1
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 0,
+            "end_node": 3,
+            "required_edge_indices": [],
+            "base_cost": 2.0,
+            "load_multiplier": 17.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 2159.0,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 2.0,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 3,
+            "end_node": 0,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 5.0,
+            "load_multiplier": 15.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 1950.0,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 2,
+                "cost": 1.0,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 1,
+                "cost": 3.0,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 1,
+                "to_node": 0,
+                "cost": 1.0,
+                "required_edge_index": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

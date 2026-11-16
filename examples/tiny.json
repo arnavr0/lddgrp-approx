@@ -1,0 +1,18 @@
+{
+  "depot": 0,
+  "travel_cost": [
+    [0, 3, 4, 5],
+    [3, 0, 2, 4],
+    [4, 2, 0, 3],
+    [5, 4, 3, 0]
+  ],
+  "delivery_demands": {"1": 6.0, "3": 2.0},
+  "required_edges": [
+    {"u": 0, "v": 2, "service_cost": 4.5},
+    {"u": 1, "v": 2, "service_cost": 2.5},
+    {"u": 2, "v": 3, "service_cost": 3.5}
+  ],
+  "curb_weight": 3.0,
+  "landing_takeoff_cost": 0.2
+}
+

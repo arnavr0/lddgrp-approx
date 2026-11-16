@@ -1,0 +1,3199 @@
+{
+  "method": "stage-aware ALNS with exact small-stage decoding and bounded enumerative local repair",
+  "instance_count": 12,
+  "seconds_per_instance": 1.0,
+  "iterations_per_instance": 2000,
+  "base_seed": 7,
+  "restarts": 4,
+  "records": [
+    {
+      "instance": "LDdGRP4_4_2_1.dat",
+      "curb_weight": 45.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 105953.0,
+      "published_optimal": true,
+      "heuristic_objective": 130444.50506680505,
+      "gap_to_published_upper_bound_percent": 23.115442759341455,
+      "elapsed_seconds": 1.06160950002959,
+      "restart_count": 4,
+      "restart_objectives": [
+        131641.78255822882,
+        131641.78255822882,
+        130444.50506680505,
+        131641.78255822882
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 75.0
+      },
+      "certificate": {
+        "objective": 130444.50506680505,
+        "delivery_order": [
+          10,
+          11
+        ],
+        "edge_stages_zero_based": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 10,
+            "required_edge_indices": [
+              5
+            ],
+            "base_cost": 341.27980278693906,
+            "load_multiplier": 47.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 23090.150730986137,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 4,
+                "cost": 128.02366860077083,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 7,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 10,
+                "cost": 79.83113418616824,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41289979755035,
+            "load_multiplier": 46.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 12484.993390687318,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41289979755035,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 11,
+            "end_node": 3,
+            "required_edge_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9
+            ],
+            "base_cost": 1958.2080210029246,
+            "load_multiplier": 45.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 94869.3609451316,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407558,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 6,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 2,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 5,
+                "cost": 97.52112850557053,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 0,
+                "cost": 137.48144310327845,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_2_2.dat",
+      "curb_weight": 30.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 75062.1,
+      "published_optimal": true,
+      "heuristic_objective": 88572.37774932539,
+      "gap_to_published_upper_bound_percent": 17.99880065882167,
+      "elapsed_seconds": 1.0542410999769345,
+      "restart_count": 4,
+      "restart_objectives": [
+        88806.73321509176,
+        89887.63521535984,
+        90224.65292052133,
+        88572.37774932539
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "13": 150.0,
+        "14": 150.0
+      },
+      "certificate": {
+        "objective": 88572.37774932539,
+        "delivery_order": [
+          13,
+          12
+        ],
+        "edge_stages_zero_based": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 13,
+            "required_edge_indices": [
+              3
+            ],
+            "base_cost": 284.15087350792436,
+            "load_multiplier": 34.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 14761.129699269428,
+            "steps": [
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 6,
+                "cost": 172.975,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 6,
+                "to_node": 13,
+                "cost": 111.17587350792438,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 12,
+            "required_edge_indices": [
+              5,
+              6,
+              7,
+              9
+            ],
+            "base_cost": 827.8572747286288,
+            "load_multiplier": 32.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 31291.43279131612,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 62.690415364734186,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 9,
+                "cost": 156.955,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 6,
+                "cost": 135.36,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 7,
+                "cost": 210.782,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 10,
+                "cost": 142.685,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 12,
+                "cost": 119.3848593638946,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0,
+              1,
+              2,
+              4,
+              8
+            ],
+            "base_cost": 1267.3271752913279,
+            "load_multiplier": 30.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 42519.815258739836,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 11,
+                "cost": 64.60573292371193,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 11,
+                "to_node": 8,
+                "cost": 238.697,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 8,
+                "to_node": 2,
+                "cost": 221.77241386610734,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 1,
+                "cost": 67.733,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 0,
+                "cost": 216.489,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 5,
+                "cost": 146.12192850150865,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 4,
+                "cost": 217.962,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 93.9461,
+                "required_edge_index": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_3_1.dat",
+      "curb_weight": 45.0,
+      "landing_takeoff_cost": 100.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 118816.0,
+      "published_optimal": true,
+      "heuristic_objective": 139814.77961447393,
+      "gap_to_published_upper_bound_percent": 17.673360165696476,
+      "elapsed_seconds": 1.0252209000173025,
+      "restart_count": 4,
+      "restart_objectives": [
+        141047.00603688863,
+        141047.00603688863,
+        139814.77961447393,
+        141047.00603688863
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 75.0,
+        "13": 75.0
+      },
+      "certificate": {
+        "objective": 139814.77961447393,
+        "delivery_order": [
+          10,
+          11,
+          12
+        ],
+        "edge_stages_zero_based": [
+          3,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 10,
+            "required_edge_indices": [
+              5
+            ],
+            "base_cost": 341.27968685291216,
+            "load_multiplier": 48.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 21181.424968939784,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 4,
+                "cost": 128.02376859087533,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 7,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 10,
+                "cost": 79.83091826203679,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41260196355239,
+            "load_multiplier": 47.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 10406.392292286962,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41260196355239,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 11,
+            "end_node": 12,
+            "required_edge_indices": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9
+            ],
+            "base_cost": 1822.8687572915253,
+            "load_multiplier": 46.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 88451.96283541016,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407557,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 6,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 2,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 5,
+                "cost": 97.52112850557052,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 12,
+                "cost": 208.36517939187917,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 339.4444337297118,
+            "load_multiplier": 45.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 19774.99951783703,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 0,
+                "cost": 133.22143372971183,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_3_2.dat",
+      "curb_weight": 45.0,
+      "landing_takeoff_cost": 125.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 119247.0,
+      "published_optimal": true,
+      "heuristic_objective": 145746.13154036552,
+      "gap_to_published_upper_bound_percent": 22.2220529995434,
+      "elapsed_seconds": 1.0096662999712862,
+      "restart_count": 4,
+      "restart_objectives": [
+        145746.13154036552,
+        145746.13154036552,
+        145746.13154036552,
+        145746.13154036552
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "15": 150.0,
+        "16": 150.0,
+        "17": 150.0
+      },
+      "certificate": {
+        "objective": 145746.13154036552,
+        "delivery_order": [
+          16,
+          15,
+          14
+        ],
+        "edge_stages_zero_based": [
+          3,
+          3,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 0,
+            "end_node": 16,
+            "required_edge_indices": [
+              4
+            ],
+            "base_cost": 247.50033469705093,
+            "load_multiplier": 51.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 18997.517069549594,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 4,
+                "cost": 115.03049974893612,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 5,
+                "cost": 80.5839,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 5,
+                "to_node": 16,
+                "cost": 51.8859349481148,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 16,
+            "end_node": 15,
+            "required_edge_indices": [],
+            "base_cost": 33.21904649444351,
+            "load_multiplier": 49.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 7752.733278227733,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 16,
+                "to_node": 15,
+                "cost": 33.21904649444351,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 15,
+            "end_node": 14,
+            "required_edge_indices": [
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "base_cost": 1928.0505514168328,
+            "load_multiplier": 47.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 96493.37591659113,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 9,
+                "cost": 40.3531516736921,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 12,
+                "cost": 132.057,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 8,
+                "cost": 138.4306026268036,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 11,
+                "cost": 226.246,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 12,
+                "cost": 89.32478895189173,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 12,
+                "to_node": 13,
+                "cost": 152.209,
+                "required_edge_index": 10
+              },
+              {
+                "kind": "service",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 180.459,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 6,
+                "cost": 166.718,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 3,
+                "cost": 156.815,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 7,
+                "cost": 109.354,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 10,
+                "cost": 238.697,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 14,
+                "cost": 297.3870081644455,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 14,
+            "end_node": 0,
+            "required_edge_indices": [
+              0,
+              1
+            ],
+            "base_cost": 375.0556727999349,
+            "load_multiplier": 45.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 22502.50527599707,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 2,
+                "cost": 84.9646727999349,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 1,
+                "cost": 222.358,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 0,
+                "cost": 67.733,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_4_1.dat",
+      "curb_weight": 45.0,
+      "landing_takeoff_cost": 100.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 123794.0,
+      "published_optimal": true,
+      "heuristic_objective": 146294.27769032796,
+      "gap_to_published_upper_bound_percent": 18.17558014954518,
+      "elapsed_seconds": 1.0178416999988258,
+      "restart_count": 4,
+      "restart_objectives": [
+        146294.27769032796,
+        146294.27769032796,
+        146294.27769032796,
+        146294.27769032796
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 75.0,
+        "13": 75.0,
+        "14": 150.0
+      },
+      "certificate": {
+        "objective": 146294.27769032796,
+        "delivery_order": [
+          13,
+          10,
+          11,
+          12
+        ],
+        "edge_stages_zero_based": [
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 73.47483432312045,
+            "load_multiplier": 50.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 8673.741716156022,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 13,
+                "cost": 73.47483432312045,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 10,
+            "required_edge_indices": [],
+            "base_cost": 82.4569856116509,
+            "load_multiplier": 48.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 8757.935309359244,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 82.4569856116509,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41260196355239,
+            "load_multiplier": 47.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 10406.392292286962,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41260196355239,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 11,
+            "end_node": 12,
+            "required_edge_indices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "base_cost": 2045.2436707541026,
+            "load_multiplier": 46.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 98681.20885468872,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407557,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 88.94991346257736,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 7,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 5,
+                "to_node": 2,
+                "cost": 97.52112850557052,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 6,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 5,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 12,
+                "cost": 208.36517939187917,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 339.4444337297118,
+            "load_multiplier": 45.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 19774.99951783703,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 0,
+                "cost": 133.22143372971183,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_4_2.dat",
+      "curb_weight": 30.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 81478.9,
+      "published_optimal": true,
+      "heuristic_objective": 108540.15610735165,
+      "gap_to_published_upper_bound_percent": 33.21259382165402,
+      "elapsed_seconds": 1.0530485000344925,
+      "restart_count": 4,
+      "restart_objectives": [
+        108854.31489633786,
+        108730.74191487621,
+        108540.15610735165,
+        108854.31489633786
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "13": 75.0,
+        "14": 150.0,
+        "15": 75.0,
+        "16": 75.0
+      },
+      "certificate": {
+        "objective": 108540.15610735165,
+        "delivery_order": [
+          13,
+          14,
+          15,
+          12
+        ],
+        "edge_stages_zero_based": [
+          4,
+          4,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 9,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 200.469399091608,
+            "load_multiplier": 35.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 12266.42896820628,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 9,
+                "to_node": 13,
+                "cost": 200.469399091608,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 14,
+            "required_edge_indices": [],
+            "base_cost": 150.5503271932678,
+            "load_multiplier": 33.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 9918.160797377837,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 14,
+                "cost": 150.5503271932678,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 14,
+            "end_node": 15,
+            "required_edge_indices": [],
+            "base_cost": 68.25966594966607,
+            "load_multiplier": 32.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 6984.309310389314,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 15,
+                "cost": 68.25966594966607,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 15,
+            "end_node": 12,
+            "required_edge_indices": [
+              2
+            ],
+            "base_cost": 440.5646317453802,
+            "load_multiplier": 31.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 18307.503584106787,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 1,
+                "cost": 183.0233537939899,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 2,
+                "cost": 194.084,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 12,
+                "cost": 63.45727795139027,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 12,
+            "end_node": 9,
+            "required_edge_indices": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "base_cost": 1885.4584482423809,
+            "load_multiplier": 30.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 61063.753447271425,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 8,
+                "cost": 98.91286129720442,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 11,
+                "cost": 224.911,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 11,
+                "to_node": 10,
+                "cost": 106.616,
+                "required_edge_index": 10
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 7,
+                "cost": 175.895,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 6,
+                "cost": 90.63904586109675,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 7,
+                "cost": 135.958,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 166.6,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 147.533,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 0,
+                "cost": 93.5903,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 1,
+                "cost": 126.048,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 1,
+                "to_node": 3,
+                "cost": 131.08924108407982,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 5,
+                "cost": 211.186,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 9,
+                "cost": 176.48,
+                "required_edge_index": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_5_1.dat",
+      "curb_weight": 15.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 49024.7,
+      "published_optimal": true,
+      "heuristic_objective": 64206.12572667891,
+      "gap_to_published_upper_bound_percent": 30.966891641721244,
+      "elapsed_seconds": 1.0147482000174932,
+      "restart_count": 4,
+      "restart_objectives": [
+        64589.85159172645,
+        64589.85159172645,
+        64206.12572667891,
+        64367.69823537616
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 150.0,
+        "13": 75.0,
+        "14": 150.0,
+        "15": 75.0
+      },
+      "certificate": {
+        "objective": 64206.12572667891,
+        "delivery_order": [
+          13,
+          10,
+          11,
+          14,
+          12
+        ],
+        "edge_stages_zero_based": [
+          5,
+          4,
+          3,
+          3,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 73.47483432312045,
+            "load_multiplier": 22.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 4916.446355108649,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 13,
+                "cost": 73.47483432312045,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 10,
+            "required_edge_indices": [],
+            "base_cost": 82.4569856116509,
+            "load_multiplier": 20.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 4649.139712233018,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 82.4569856116509,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41260196355239,
+            "load_multiplier": 19.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 5156.839437307495,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41260196355239,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 11,
+            "end_node": 14,
+            "required_edge_indices": [
+              2,
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "base_cost": 1237.7446346239901,
+            "load_multiplier": 17.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 23591.65878860783,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407557,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 6,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 2,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 1,
+                "cost": 89.58557841527839,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 5,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 5,
+                "to_node": 14,
+                "cost": 99.36260681463625,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 14,
+            "end_node": 12,
+            "required_edge_indices": [
+              1,
+              4,
+              5
+            ],
+            "base_cost": 1009.3984329672649,
+            "load_multiplier": 16.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 18550.374927476238,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 1,
+                "cost": 110.47234011280833,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 7,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 88.94991346257736,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 12,
+                "cost": 208.36517939187917,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 339.4444337297118,
+            "load_multiplier": 15.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 7341.666505945677,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 0,
+                "cost": 133.22143372971183,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_5_2.dat",
+      "curb_weight": 30.0,
+      "landing_takeoff_cost": 125.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 92996.2,
+      "published_optimal": true,
+      "heuristic_objective": 115948.7104910351,
+      "gap_to_published_upper_bound_percent": 24.681127283733215,
+      "elapsed_seconds": 1.1819444000138901,
+      "restart_count": 4,
+      "restart_objectives": [
+        117375.02101143094,
+        115948.7104910351,
+        117375.02101143094,
+        117375.02101143094
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "14": 150.0,
+        "15": 75.0,
+        "16": 75.0,
+        "17": 150.0,
+        "18": 75.0
+      },
+      "certificate": {
+        "objective": 115948.7104910351,
+        "delivery_order": [
+          15,
+          17,
+          13,
+          14,
+          16
+        ],
+        "edge_stages_zero_based": [
+          5,
+          4,
+          5,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 2,
+            "end_node": 15,
+            "required_edge_indices": [],
+            "base_cost": 69.5881428477582,
+            "load_multiplier": 37.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 7199.7612853670535,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 15,
+                "cost": 69.5881428477582,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 15,
+            "end_node": 17,
+            "required_edge_indices": [],
+            "base_cost": 78.81355849090941,
+            "load_multiplier": 36.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 7337.288105672739,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 17,
+                "cost": 78.81355849090941,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 17,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 32.453354125575366,
+            "load_multiplier": 35.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 5510.867394395138,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 17,
+                "to_node": 13,
+                "cost": 32.453354125575366,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 13,
+            "end_node": 14,
+            "required_edge_indices": [],
+            "base_cost": 54.92837569963265,
+            "load_multiplier": 33.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 5937.636398087878,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 14,
+                "cost": 54.92837569963265,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 14,
+            "end_node": 16,
+            "required_edge_indices": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "base_cost": 2254.5190787162383,
+            "load_multiplier": 32.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 76144.61051891962,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 10,
+                "cost": 39.64806281522467,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 284.835,
+                "required_edge_index": 10
+              },
+              {
+                "kind": "service",
+                "from_node": 11,
+                "to_node": 12,
+                "cost": 141.861,
+                "required_edge_index": 11
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 9,
+                "cost": 131.2285002489642,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 10,
+                "cost": 222.146,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 6,
+                "cost": 126.368,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 6,
+                "to_node": 5,
+                "cost": 58.562347160953145,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 9,
+                "cost": 191.449,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 152.209,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 4,
+                "cost": 160.69,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 193.281,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 7,
+                "cost": 214.119,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 3,
+                "cost": 142.74584220467366,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 0,
+                "cost": 151.124,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 16,
+                "cost": 44.25232628642251,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 16,
+            "end_node": 2,
+            "required_edge_indices": [
+              0,
+              2
+            ],
+            "base_cost": 335.6182262864225,
+            "load_multiplier": 30.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 13818.546788592676,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 16,
+                "to_node": 0,
+                "cost": 44.25232628642251,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 1,
+                "cost": 80.5839,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 2,
+                "cost": 210.782,
+                "required_edge_index": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_6_1.dat",
+      "curb_weight": 15.0,
+      "landing_takeoff_cost": 100.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 51940.4,
+      "published_optimal": true,
+      "heuristic_objective": 62901.182234597545,
+      "gap_to_published_upper_bound_percent": 21.102614216674386,
+      "elapsed_seconds": 1.0285508000524715,
+      "restart_count": 4,
+      "restart_objectives": [
+        63372.2327233099,
+        63372.2327233099,
+        65430.63570675693,
+        62901.182234597545
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 150.0,
+        "13": 75.0,
+        "14": 75.0,
+        "15": 75.0,
+        "16": 150.0
+      },
+      "certificate": {
+        "objective": 62901.182234597545,
+        "delivery_order": [
+          13,
+          10,
+          11,
+          15,
+          14,
+          12
+        ],
+        "edge_stages_zero_based": [
+          6,
+          5,
+          5,
+          3,
+          5,
+          5,
+          3,
+          3,
+          3,
+          3
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 73.47483432312045,
+            "load_multiplier": 23.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 3989.92118943177,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 13,
+                "cost": 73.47483432312045,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 10,
+            "required_edge_indices": [],
+            "base_cost": 82.4569856116509,
+            "load_multiplier": 22.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 4014.05368345632,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 82.4569856116509,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41260196355239,
+            "load_multiplier": 21.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 4649.6646412346,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41260196355239,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 11,
+            "end_node": 15,
+            "required_edge_indices": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "base_cost": 958.5947063189578,
+            "load_multiplier": 19.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 20113.299420060197,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407557,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 6,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 2,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 2,
+                "to_node": 15,
+                "cost": 69.49125692488226,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 15,
+            "end_node": 14,
+            "required_edge_indices": [],
+            "base_cost": 100.87468233902895,
+            "load_multiplier": 17.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 3414.869599763492,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 14,
+                "cost": 100.87468233902895,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 14,
+            "end_node": 12,
+            "required_edge_indices": [
+              1,
+              2,
+              4,
+              5
+            ],
+            "base_cost": 1157.9816996690927,
+            "load_multiplier": 16.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 20127.707194705483,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 5,
+                "cost": 99.36260681463625,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 7,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 88.94991346257736,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 12,
+                "cost": 208.36517939187917,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 6,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 339.4444337297118,
+            "load_multiplier": 15.0,
+            "landing_takeoff_cost": 100.0,
+            "weighted_cost": 6591.666505945677,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 0,
+                "cost": 133.22143372971183,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_6_2.dat",
+      "curb_weight": 30.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 103443.0,
+      "published_optimal": true,
+      "heuristic_objective": 135081.7317873985,
+      "gap_to_published_upper_bound_percent": 30.585667263515642,
+      "elapsed_seconds": 1.0284501999849454,
+      "restart_count": 4,
+      "restart_objectives": [
+        135081.7317873985,
+        135081.7317873985,
+        135081.7317873985,
+        135081.7317873985
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "14": 150.0,
+        "15": 75.0,
+        "16": 150.0,
+        "17": 150.0,
+        "18": 150.0,
+        "19": 75.0
+      },
+      "certificate": {
+        "objective": 135081.7317873985,
+        "delivery_order": [
+          16,
+          15,
+          13,
+          18,
+          17,
+          14
+        ],
+        "edge_stages_zero_based": [
+          6,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          1,
+          5
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 8,
+            "end_node": 16,
+            "required_edge_indices": [],
+            "base_cost": 118.08915900153576,
+            "load_multiplier": 40.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 10723.566360061432,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 8,
+                "to_node": 16,
+                "cost": 118.08915900153576,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 16,
+            "end_node": 15,
+            "required_edge_indices": [
+              9
+            ],
+            "base_cost": 391.2248717125389,
+            "load_multiplier": 38.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 20566.54512507648,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 16,
+                "to_node": 12,
+                "cost": 36.09660403265104,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 12,
+                "to_node": 7,
+                "cost": 222.55,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 7,
+                "to_node": 15,
+                "cost": 132.57826767988786,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 15,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 103.34667471070371,
+            "load_multiplier": 36.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 9120.480289585334,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 13,
+                "cost": 103.34667471070371,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 13,
+            "end_node": 18,
+            "required_edge_indices": [],
+            "base_cost": 58.71391427932564,
+            "load_multiplier": 34.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 7096.273085497072,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 18,
+                "cost": 58.71391427932564,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 18,
+            "end_node": 17,
+            "required_edge_indices": [],
+            "base_cost": 137.27369898476547,
+            "load_multiplier": 33.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 9480.03206649726,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 18,
+                "to_node": 17,
+                "cost": 137.27369898476547,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 17,
+            "end_node": 14,
+            "required_edge_indices": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              10
+            ],
+            "base_cost": 1753.2133779391968,
+            "load_multiplier": 31.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 58999.6147161151,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 17,
+                "to_node": 5,
+                "cost": 120.95242396186198,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 6,
+                "cost": 216.139,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 9,
+                "cost": 233.843,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 9,
+                "to_node": 10,
+                "cost": 105.35625689979878,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 149.637,
+                "required_edge_index": 10
+              },
+              {
+                "kind": "service",
+                "from_node": 11,
+                "to_node": 7,
+                "cost": 203.017,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 224.911,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 157.56,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "service",
+                "from_node": 3,
+                "to_node": 2,
+                "cost": 135.958,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 0,
+                "cost": 153.437,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 14,
+                "cost": 52.40269707753601,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 6,
+            "start_node": 14,
+            "end_node": 8,
+            "required_edge_indices": [
+              0,
+              2
+            ],
+            "base_cost": 486.5073381521932,
+            "load_multiplier": 30.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 19095.220144565796,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 0,
+                "cost": 52.40269707753601,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 1,
+                "cost": 172.396,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 135.645,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 4,
+                "to_node": 8,
+                "cost": 126.06364107465721,
+                "required_edge_index": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_7_1.dat",
+      "curb_weight": 15.0,
+      "landing_takeoff_cost": 150.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 58761.3,
+      "published_optimal": true,
+      "heuristic_objective": 79841.94292673346,
+      "gap_to_published_upper_bound_percent": 35.87504518574889,
+      "elapsed_seconds": 1.004938600002788,
+      "restart_count": 4,
+      "restart_objectives": [
+        80953.20394616577,
+        79955.09235296102,
+        79841.94292673346,
+        79841.94292673346
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "11": 75.0,
+        "12": 150.0,
+        "13": 150.0,
+        "14": 75.0,
+        "15": 150.0,
+        "16": 150.0,
+        "17": 75.0
+      },
+      "certificate": {
+        "objective": 79841.94292673346,
+        "delivery_order": [
+          13,
+          10,
+          11,
+          14,
+          15,
+          16,
+          12
+        ],
+        "edge_stages_zero_based": [
+          7,
+          6,
+          6,
+          5,
+          6,
+          3,
+          5,
+          6,
+          3,
+          3
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 3,
+            "end_node": 13,
+            "required_edge_indices": [],
+            "base_cost": 73.47483432312045,
+            "load_multiplier": 26.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 5810.345692401132,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 13,
+                "cost": 73.47483432312045,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 13,
+            "end_node": 10,
+            "required_edge_indices": [],
+            "base_cost": 82.4569856116509,
+            "load_multiplier": 25.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 5811.424640291272,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 13,
+                "to_node": 10,
+                "cost": 82.4569856116509,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 10,
+            "end_node": 11,
+            "required_edge_indices": [],
+            "base_cost": 121.41260196355239,
+            "load_multiplier": 24.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 6513.902447125258,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 11,
+                "cost": 121.41260196355239,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 11,
+            "end_node": 14,
+            "required_edge_indices": [
+              5,
+              8,
+              9
+            ],
+            "base_cost": 610.4383593520386,
+            "load_multiplier": 22.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 16729.643905744848,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 9,
+                "cost": 76.92584939407557,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 8,
+                "cost": 188.608,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "service",
+                "from_node": 8,
+                "to_node": 7,
+                "cost": 114.183,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 4,
+                "cost": 133.425,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 4,
+                "to_node": 14,
+                "cost": 97.29650995796302,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 14,
+            "end_node": 15,
+            "required_edge_indices": [],
+            "base_cost": 100.87468233902895,
+            "load_multiplier": 20.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 5017.493646780578,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 15,
+                "cost": 100.87468233902895,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 15,
+            "end_node": 16,
+            "required_edge_indices": [
+              3,
+              6
+            ],
+            "base_cost": 362.71247025740365,
+            "load_multiplier": 18.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 9228.824464633266,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 2,
+                "cost": 69.49125692488226,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 6,
+                "cost": 76.8396,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 5,
+                "cost": 173.575,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 5,
+                "to_node": 16,
+                "cost": 42.80661333252142,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 6,
+            "start_node": 16,
+            "end_node": 12,
+            "required_edge_indices": [
+              1,
+              2,
+              4,
+              7
+            ],
+            "base_cost": 1225.802448459496,
+            "load_multiplier": 17.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 23388.641623811433,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 16,
+                "to_node": 7,
+                "cost": 130.58626906761677,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 5,
+                "cost": 258.972,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 159.693,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 4,
+                "cost": 276.15,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 3,
+                "cost": 192.036,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 12,
+                "cost": 208.36517939187917,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 7,
+            "start_node": 12,
+            "end_node": 3,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 339.4444337297118,
+            "load_multiplier": 15.0,
+            "landing_takeoff_cost": 150.0,
+            "weighted_cost": 7341.666505945677,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 12,
+                "to_node": 0,
+                "cost": 133.22143372971183,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 3,
+                "cost": 206.223,
+                "required_edge_index": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "instance": "LDdGRP4_4_7_2.dat",
+      "curb_weight": 30.0,
+      "landing_takeoff_cost": 125.0,
+      "published_lower_bound": null,
+      "published_upper_bound": 105773.0,
+      "published_optimal": true,
+      "heuristic_objective": 140372.1797149784,
+      "gap_to_published_upper_bound_percent": 32.710786037058995,
+      "elapsed_seconds": 1.0982028000289574,
+      "restart_count": 4,
+      "restart_objectives": [
+        140372.1797149784,
+        140770.2126985882,
+        141269.14356571922,
+        140970.62972276917
+      ],
+      "generic_delivery_costs_not_used_by_lddgrp_objective": {
+        "15": 150.0,
+        "16": 75.0,
+        "17": 75.0,
+        "18": 75.0,
+        "19": 75.0,
+        "20": 150.0,
+        "21": 75.0
+      },
+      "certificate": {
+        "objective": 140372.1797149784,
+        "delivery_order": [
+          18,
+          14,
+          19,
+          17,
+          15,
+          20,
+          16
+        ],
+        "edge_stages_zero_based": [
+          5,
+          7,
+          4,
+          2,
+          2,
+          7,
+          4,
+          2,
+          3,
+          7,
+          3,
+          3
+        ],
+        "stages": [
+          {
+            "stage_zero_based": 0,
+            "start_node": 8,
+            "end_node": 18,
+            "required_edge_indices": [],
+            "base_cost": 165.46752225669545,
+            "load_multiplier": 39.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 11328.233368011124,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 8,
+                "to_node": 18,
+                "cost": 165.46752225669545,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 1,
+            "start_node": 18,
+            "end_node": 14,
+            "required_edge_indices": [],
+            "base_cost": 108.0618989374146,
+            "load_multiplier": 38.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 8856.352159621754,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 18,
+                "to_node": 14,
+                "cost": 108.0618989374146,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 2,
+            "start_node": 14,
+            "end_node": 19,
+            "required_edge_indices": [
+              3,
+              4,
+              7
+            ],
+            "base_cost": 750.3707010675489,
+            "load_multiplier": 36.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 31513.34523843176,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 14,
+                "to_node": 7,
+                "cost": 74.10567800782879,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 7,
+                "to_node": 3,
+                "cost": 121.115,
+                "required_edge_index": 4
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 3,
+                "to_node": 2,
+                "cost": 151.61549378609033,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 2,
+                "to_node": 6,
+                "cost": 126.368,
+                "required_edge_index": 3
+              },
+              {
+                "kind": "service",
+                "from_node": 6,
+                "to_node": 10,
+                "cost": 224.259,
+                "required_edge_index": 7
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 10,
+                "to_node": 19,
+                "cost": 52.90752927362987,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 3,
+            "start_node": 19,
+            "end_node": 17,
+            "required_edge_indices": [
+              8,
+              10,
+              11
+            ],
+            "base_cost": 446.12557909238535,
+            "load_multiplier": 34.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 19418.269689141103,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 19,
+                "to_node": 13,
+                "cost": 52.108369577256965,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 13,
+                "to_node": 12,
+                "cost": 95.1705,
+                "required_edge_index": 11
+              },
+              {
+                "kind": "service",
+                "from_node": 12,
+                "to_node": 10,
+                "cost": 122.641,
+                "required_edge_index": 10
+              },
+              {
+                "kind": "service",
+                "from_node": 10,
+                "to_node": 9,
+                "cost": 109.06,
+                "required_edge_index": 8
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 9,
+                "to_node": 17,
+                "cost": 67.14570951512836,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 4,
+            "start_node": 17,
+            "end_node": 15,
+            "required_edge_indices": [
+              2,
+              6
+            ],
+            "base_cost": 453.49347342168073,
+            "load_multiplier": 33.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 19090.284622915464,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 17,
+                "to_node": 9,
+                "cost": 67.14570951512836,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 5,
+                "cost": 135.145,
+                "required_edge_index": 6
+              },
+              {
+                "kind": "service",
+                "from_node": 5,
+                "to_node": 1,
+                "cost": 191.449,
+                "required_edge_index": 2
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 1,
+                "to_node": 15,
+                "cost": 59.75376390655238,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 5,
+            "start_node": 15,
+            "end_node": 20,
+            "required_edge_indices": [
+              0
+            ],
+            "base_cost": 288.53003072467527,
+            "load_multiplier": 32.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 13232.960983189609,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 15,
+                "to_node": 1,
+                "cost": 59.75376390655238,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 1,
+                "to_node": 0,
+                "cost": 156.955,
+                "required_edge_index": 0
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 0,
+                "to_node": 20,
+                "cost": 71.82126681812288,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 6,
+            "start_node": 20,
+            "end_node": 16,
+            "required_edge_indices": [],
+            "base_cost": 105.87130417332165,
+            "load_multiplier": 31.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 7157.010429372971,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 20,
+                "to_node": 16,
+                "cost": 105.87130417332165,
+                "required_edge_index": null
+              }
+            ]
+          },
+          {
+            "stage_zero_based": 7,
+            "start_node": 16,
+            "end_node": 8,
+            "required_edge_indices": [
+              1,
+              5,
+              9
+            ],
+            "base_cost": 867.5241074764873,
+            "load_multiplier": 30.0,
+            "landing_takeoff_cost": 125.0,
+            "weighted_cost": 29775.72322429462,
+            "steps": [
+              {
+                "kind": "deadhead",
+                "from_node": 16,
+                "to_node": 0,
+                "cost": 129.41350881573373,
+                "required_edge_index": null
+              },
+              {
+                "kind": "service",
+                "from_node": 0,
+                "to_node": 4,
+                "cost": 160.69,
+                "required_edge_index": 1
+              },
+              {
+                "kind": "service",
+                "from_node": 4,
+                "to_node": 9,
+                "cost": 262.331,
+                "required_edge_index": 5
+              },
+              {
+                "kind": "service",
+                "from_node": 9,
+                "to_node": 11,
+                "cost": 203.777,
+                "required_edge_index": 9
+              },
+              {
+                "kind": "deadhead",
+                "from_node": 11,
+                "to_node": 8,
+                "cost": 111.3125986607536,
+                "required_edge_index": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
